@@ -120,10 +120,10 @@ class HexString(object):
         else:
             if self.total_score < 0:
                 perc_acc = int(float(self.total_score / float((self.__score_range[0])))*100)
-                return 'This is *DATA* with ' + str(perc_acc) + '% accuracy per our algorithm'
+                return 'This is *DATA* with ' + str(perc_acc) + '% confidence per our algorithm'
             elif self.total_score >= 0:
                 perc_acc = int(float(self.total_score / float((self.__score_range[1])))*100)
-                return 'This is *INSTRUCTIONS* with ' + str(perc_acc) + '% accuracy per our algorithm'
+                return 'This is *INSTRUCTIONS* with ' + str(perc_acc) + '% confidence per our algorithm'
 
 
 
